@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Camera, CameraOptions } from '@ionic-native/camera';
+import { ClientesPage } from '../clientes/clientes';
 
 @Component({
   selector: 'page-home',
@@ -27,6 +28,9 @@ export class HomePage {
 		 // Handle error
 		 });
 
+	}
+	goToClientesPage(){
+	this.navCtrl.push( ClientesPage );
 	}
 
 }
