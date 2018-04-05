@@ -7,11 +7,13 @@
 <ion-content padding>
   <ion-card>
     <ion-card-content>
-      <button ion-button color="danger" icon-right block (click)="takePicture();"> Tomar Foto
-        
-      </button>
+      <button ion-button color="danger" icon-right block (click)="takePicture();"> Tomar Foto</button>
+      <button ion-button full (click)="openCamera();"> Abrir Camara</button>
+      <button ion-button full (click)="openGallery();"> Abrir Gallery</button>
 
       <img [src]="base64Image">
+
+      <button ion-button full (click)="uploadImage();"> Actualizar Imagen</button>
     
     
     </ion-card-content>
